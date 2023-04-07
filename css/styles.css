@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5dc; /* Cream background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, #fada5e, #ffcc33); /* Royal yellow gradient */
+    color: white;
+    padding: 1rem;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#quote-container {
+    flex: 1;
+    margin: 2rem;
+    text-align: right;
+}
+
+#picture-container {
+    flex: 1;
+    margin: 2rem;
+}
+
+#quote:before {
+    content: "“"; /* Add opening quotation mark */
+}
+
+#quote:after {
+    content: "”"; /* Add closing quotation mark */
+}
+
+#picture {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #4a90e2; /* Change button color */
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    position: fixed; /* Change from absolute to fixed position */
+    bottom: 20px; /* Adjust this value to set the distance from the bottom */
+    left: 50%; /* Center the button */
+    transform: translateX(-50%); /* Center the button */
+}
+
+button:hover {
+    background-color: #6aa4f4;
+}
